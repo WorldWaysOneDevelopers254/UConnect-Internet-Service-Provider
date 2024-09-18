@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UConnect Internet Service Provider/Homepage</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+           <!-- Navbar Start -->
+           <div class="container-fluid bg-primary">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">U.I.<span class="text-secondary">S.P</span> </h1>
+                    </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <head>
+                                <!-- Include Font Awesome and Bootstrap (optional for navbar styling) -->
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                                <style>
+                                    /* Bold text for nav links */
+                                    .nav-link {
+                                        font-weight: bold;
+                                        transition: transform 0.3s ease, color 0.3s ease;
+                                    }
+                            
+                                    /* Hover effect */
+                                    .nav-link:hover {
+                                        color: #ff6347; /* Change text color on hover (tomato color) */
+                                        transform: scale(1.1); /* Slightly enlarge the text on hover */
+                                    }
+                                </style>
+                            </head>
+                            
+                            <body>
+                                <nav class="navbar">
+                                    <a href="index.html" class="nav-item nav-link active text-secondary">
+                                        <i class="fas fa-home"></i> Home
+                                    </a>
+                                    <a href="Packages.html" class="nav-item nav-link">
+                                        <i class="fas fa-concierge-bell"></i> Services
+                                    </a>
+                                    <a href="FAQS.html" class="nav-item nav-link">
+                                        <i class="fas fa-question-circle"></i> FAQS
+                                    </a>
+                            
+                                    <div class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                            <i class="f"></i>
+                                        </a>
+                                        <div class="dropdown-menu rounded">
+                                            <!-- Dropdown items here -->
+                                        </div>
+                                    </div>
+                            
+                                    <a href="contact.html" class="nav-item nav-link">
+                                        <i class="fas fa-envelope"></i> Contact Us
+                                    </a>
+                                    <a href="Rate.html" class="nav-item nav-link">
+                                        <i class="fas fa-star"></i> Rate Us
+                                    </a>
+                                </nav>
+                            </body>
+                            
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Do you have any questions?</span>
+                            <span class="text-secondary">Call: +254 708 222536</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+    <!-- Rating Section Start -->
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-success">Rate Us</h5>
+            <h1>We'd Love Your Feedback!</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="ratingForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Your Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter your location" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Your Rating</label>
+                        <div id="starRating" class="d-flex align-items-center">
+                            <i class="fas fa-star text-muted rating-star" data-value="1"></i>
+                            <i class="fas fa-star text-muted rating-star" data-value="2"></i>
+                            <i class="fas fa-star text-muted rating-star" data-value="3"></i>
+                            <i class="fas fa-star text-muted rating-star" data-value="4"></i>
+                            <i class="fas fa-star text-muted rating-star" data-value="5"></i>
+                        </div>
+                        <input type="hidden" id="rating" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Your Feedback</label>
+                        <textarea class="form-control" id="feedback" rows="4" placeholder="Share your experience with us" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Submit Rating</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Success message after submission -->
+        <div id="ratingSuccess" class="alert alert-success d-none mt-4 text-center">
+            <i class="fas fa-check-circle fa-2x mb-2 text-success"></i>
+            <h4 class="mb-2">Thank you!</h4>
+            <p>Your feedback has been submitted successfully.</p>
+        </div>
+    </div>
+    <!-- Rating Section End -->
+
+    <!-- Manage Reviews Section with Login -->
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Manage Reviews</h5>
+            <h1>Admin Control Panel</h1>
+            <p>Login required to manage reviews.</p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="row justify-content-center" id="loginForm">
+            <div class="col-md-6">
+                <form id="adminLoginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter admin username" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <div id="loginError" class="alert alert-danger d-none mt-3">Invalid credentials, please try again.</div>
+            </div>
+        </div>
+<!-- Back to Homepage Button (Initially hidden) -->
+<div id="backToHomeButton" class="d-none text-center mt-4">
+    <a href="index.html" class="btn btn-primary py-3 px-5 rounded-pill">Back to Homepage</a>
+</div>
+
+<!-- JavaScript to Show the Button After Submission or Deletion -->
+<script>
+    // Function to show the button after submitting a review
+    function showBackToHomeButton() {
+        document.getElementById('backToHomeButton').classList.remove('d-none');
+    }
+
+    // Show the button after review submission
+    document.getElementById('ratingForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // (your existing submission logic)
+        showBackToHomeButton(); // Show the button
+    });
+
+    // Show the button after deleting a review
+    function deleteReview(index) {
+        let reviews = JSON.parse(localStorage.getItem('testimonials')) || [];
+        reviews.splice(index, 1);
+        localStorage.setItem('testimonials', JSON.stringify(reviews));
+        displayAdminReviews();
+        showBackToHomeButton(); // Show the button after deletion
+    }
+</script>
+
+        <!-- Admin Reviews Management Panel (Hidden initially) -->
+        <div class="row justify-content-center d-none" id="reviewsPanel">
+            <div class="col-md-8">
+                <h3 class="text-center">Review Management</h3>
+                <div id="reviews-list" class="list-group"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to Homepage Button (Initially hidden) -->
+<div id="backToHomeButton" class="d-none text-center mt-4">
+    <a href="index.html" class="btn btn-primary py-3 px-5 rounded-pill">Back to Homepage</a>
+</div>
+
+<!-- JavaScript to Show the Button After Submission or Deletion -->
+<script>
+    // Function to show the button after submitting a review
+    function showBackToHomeButton() {
+        document.getElementById('backToHomeButton').classList.remove('d-none');
+    }
+
+    // Show the button after review submission
+    document.getElementById('ratingForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // (your existing submission logic)
+        showBackToHomeButton(); // Show the button
+    });
+
+    // Show the button after deleting a review
+    function deleteReview(index) {
+        let reviews = JSON.parse(localStorage.getItem('testimonials')) || [];
+        reviews.splice(index, 1);
+        localStorage.setItem('testimonials', JSON.stringify(reviews));
+        displayAdminReviews();
+        showBackToHomeButton(); // Show the button after deletion
+    }
+</script>
+
+    <!-- Manage Reviews Section End -->
+
+    <!-- JavaScript for Managing Reviews with Login -->
+    <script>
+        // Admin login credentials (for simplicity, hardcoded here)
+        const adminUsername = "Vincent";
+        const adminPassword = "Vinadmin123";
+
+        // Handle admin login form submission
+        document.getElementById('adminLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === adminUsername && password === adminPassword) {
+                // Hide login form and show reviews panel
+                document.getElementById('loginForm').classList.add('d-none');
+                document.getElementById('reviewsPanel').classList.remove('d-none');
+                displayAdminReviews(); // Load reviews
+            } else {
+                // Show error message
+                document.getElementById('loginError').classList.remove('d-none');
+            }
+        });
+
+        // Function to display reviews in the admin section
+        function displayAdminReviews() {
+            const reviews = JSON.parse(localStorage.getItem('testimonials')) || [];
+            const reviewsList = document.getElementById('reviews-list');
+            reviewsList.innerHTML = ''; // Clear existing reviews
+
+            // Display each review with a delete button
+            reviews.forEach((review, index) => {
+                const reviewItem = `
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-1">${review.name} (${review.rating}★)</h5>
+                            <p class="mb-1">${review.feedback}</p>
+                            <small>${review.location}</small>
+                        </div>
+                        <button class="btn btn-danger btn-sm" onclick="deleteReview(${index})">Delete</button>
+                    </div>
+                `;
+                reviewsList.innerHTML += reviewItem;
+            });
+        }
+
+        // Function to delete a review
+        function deleteReview(index) {
+            let reviews = JSON.parse(localStorage.getItem('testimonials')) || [];
+            reviews.splice(index, 1); // Remove the selected review by index
+            localStorage.setItem('testimonials', JSON.stringify(reviews)); // Update localStorage
+
+            displayAdminReviews(); // Refresh the reviews list in admin section
+        }
+
+        // Handle star rating
+        let selectedRating = 0;
+        document.querySelectorAll('.rating-star').forEach(star => {
+            star.addEventListener('click', function() {
+                selectedRating = this.getAttribute('data-value');
+                document.getElementById('rating').value = selectedRating;
+
+                // Highlight stars based on the selected rating
+                document.querySelectorAll('.rating-star').forEach(s => {
+                    s.classList.remove('text-warning');
+                    s.classList.add('text-muted');
+                });
+                for (let i = 0; i < selectedRating; i++) {
+                    document.querySelectorAll('.rating-star')[i].classList.add('text-warning');
+                    document.querySelectorAll('.rating-star')[i].classList.remove('text-muted');
+                }
+            });
+        });
+
+        // Handle rating form submission
+        document.getElementById('ratingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Capture the rating details
+            const name = document.getElementById('name').value;
+            const location = document.getElementById('location').value;
+            const rating = document.getElementById('rating').value;
+            const feedback = document.getElementById('feedback').value;
+
+            // Create a new testimonial object
+            const newTestimonial = {
+                name: name,
+                location: location,
+                rating: rating,
+                feedback: feedback
+            };
+
+            // Store the testimonial in localStorage
+            let testimonials = JSON.parse(localStorage.getItem('testimonials')) || [];
+            testimonials.push(newTestimonial);
+            localStorage.setItem('testimonials', JSON.stringify(testimonials));
+
+            // Show success message
+            document.getElementById('ratingSuccess').classList.remove('d-none');
+
+            // Clear the form
+            document.getElementById('ratingForm').reset();
+
+            // Reset stars to default
+            document.querySelectorAll('.rating-star').forEach(s => {
+                s.classList.remove('text-warning');
+                s.classList.add('text-muted');
+            });
+        });
+    </script>
+
+</body>
+</html>

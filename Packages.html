@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UConnect Internet Service Provider/Homepage</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        #spinner {
+            z-index: 9999; /* Ensure spinner is on top */
+        }
+        .navbar {
+            position: relative; /* Position relative to avoid overlap */
+            z-index: 10000; /* Ensure navbar is above spinner */
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Fourt Crest Street, Kisii, Ogembo</small>
+                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>uconnectinternetserviceprovider1@gmail.com</small>
+                </div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We connect you to the fastest internet solution</small></div>
+                <div class="top-link">
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+     <!--Service Section-->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold d-block">U.I.<span class="text-secondary">S.P</span> </h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link active text-secondary">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        <a href="Packages.html" class="nav-item nav-link">
+                            <i class="fas fa-concierge-bell"></i> Services
+                        </a>
+                        <a href="FAQS.html" class="nav-item nav-link">
+                            <i class="fas fa-question-circle"></i> FAQS
+                        </a>
+                        <a href="contact.html" class="nav-item nav-link">
+                            <i class="fas fa-envelope"></i> Contact Us
+                        </a>
+                        <a href="Rate.html" class="nav-item nav-link">
+                            <i class="fas fa-star"></i> Rate Us
+                        </a>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Do you have any questions?</span>
+                            <span class="text-secondary">Call: +254 708 222536</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <head>
+        <!-- Include Font Awesome, Bootstrap (optional), and animate.css for animations -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <style>
+            /* Basic styling for services section */
+            .services {
+                padding: 60px 0;
+                background-color: #f9f9f9;
+            }
+    
+            .service-item {
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                transition: transform 0.3s ease;
+                position: relative;
+            }
+    
+            /* Hover effect with scaling */
+            .service-item:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+    
+            /* Pop-up info on hover */
+            .service-item .service-info {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                transition: visibility 0s, opacity 0.5s ease;
+                z-index: 2;
+            }
+    
+            .service-item:hover .service-info {
+                opacity: 1;
+                visibility: visible;
+            }
+    
+            .service-item i {
+                font-size: 60px;
+                color: #007bff;
+                margin-bottom: 20px;
+            }
+    
+            .service-item h3 {
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+    
+            /* Animation classes */
+            .animate__animated.animate__fadeInUp {
+                animation-duration: 1s;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Services Section -->
+        <div class="container-fluid services py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow animate__animated animate__fadeIn" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Services</h5>
+                    <h1>Advanced Internet Solutions for All Your Needs</h1>
+                </div>
+    
+                <div class="row g-5">
+                    <!-- Service 1 -->
+                    <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+                        <div class="service-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Enterprise Connectivity</h3>
+                            <p>High-speed, reliable internet for businesses of all sizes.</p>
+                            <div class="service-info">
+                                <p>We offer customized enterprise solutions with dedicated support for seamless business operations.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 2 -->
+                    <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Secure Network Solutions</h3>
+                            <p>Advanced security features to protect your business and data.</p>
+                            <div class="service-info">
+                                <p>Ensure your network is safe from cyber threats with our cutting-edge security technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 3 -->
+                    <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <i class="fas fa-satellite-dish"></i>
+                            <h3>Satellite Broadband</h3>
+                            <p>Rural internet solutions that keep you connected no matter where you are.</p>
+                            <div class="service-info">
+                                <p>We provide satellite broadband with high-speed connections even in remote areas.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 4 -->
+                    <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Broadband</h3>
+                            <p>Fast, on-the-go internet for mobile users.</p>
+                            <div class="service-info">
+                                <p>Stay connected wherever you go with our high-speed mobile broadband plans.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 5 -->
+                    <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <i class="fas fa-wifi"></i>
+                            <h3>Home Wi-Fi Installation</h3>
+                            <p>High-performance Wi-Fi installation services for homes.</p>
+                            <div class="service-info">
+                                <p>Get reliable, fast Wi-Fi with easy setup and strong signal coverage for your entire home.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Service 6 -->
+                    <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                        <div class="service-item">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Cloud Networking</h3>
+                            <p>Seamless integration and connectivity for cloud-based applications.</p>
+                            <div class="service-info">
+                                <p>Optimize your business’s cloud applications with our efficient, scalable networking solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Include WOW.js and initialization script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            // Initialize WOW.js for animations
+            new WOW().init();
+        </script>
+    </body>
+     <!-- Footer Start -->
+     <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h1 class="text-white fw-bold d-block">UConnect<span class="text-secondary"><br>Internet Service Provider</span> </h1>
+                    </a>
+                    <div class="d-flex hightech-link">
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-whatsapp text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Short Link</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="index.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                        <a href="Packages.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                        <a href="FAQS.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQS</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Help Link</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="con" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Packages</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Best Router</a>
+                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Requirement</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="https://maps.app.goo.gl/HFz3e2qL3NtRCide6" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 1st Street, Ogembo, Kisii</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +254708222536</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> uconnectinternetservice<br>provider1@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="index.html" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>UConnect Internet Service Provider</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <span class="text-light">Developed By:<a href="hhttps://www.worldwaysonedevelopers.co.ke/" class="text-secondary"> WorldWaysOne Developers</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/66cdee4fea492f34bc0aa702/1i6a6lpqp';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--></body>
+
+</html>
+    <script>
+        // Hide spinner after content loads
+        window.onload = function() {
+            document.getElementById('spinner').style.display = 'none';
+        };
+    </script>
+
+    <!-- Carousel and other content here -->
+    <!-- Ensure to add other content sections as needed -->
+    
+    <!-- Footer and other scripts -->
+</body>
+
+
+</html>
